@@ -1,6 +1,7 @@
 import './App.css'
 import logo from './assets/main-icon.png'
 import TodayDate from './todayDate'
+import RestaurantSelection from './restaurant-selection'
 
 function App() {
   return (
@@ -12,8 +13,11 @@ function App() {
         <div className='overay-box'>
           <div className='date-button-wrapper'>
             <TodayDate />
-            <button className="coalition-button">제휴 식당 보기</button>
+            <button className="coalition-button" 
+            onClick={()=>window.open('https://map.naver.com/p/favorite/myPlace/folder/841c9b6f17c4413eb548bd090aa60fcd/pc?c=14.00,0,0,0,dh','_blank')}>
+              제휴 식당 보기</button>
           </div>
+          < RestaurantSelection />
         </div>
      </div>
   )

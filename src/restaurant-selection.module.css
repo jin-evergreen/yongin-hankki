@@ -1,0 +1,43 @@
+.text {
+    font-size: 14px;
+    font-family: 'Pretendard';
+    color: #BCC1CD;
+    margin-left: 5%;
+
+}
+
+.container {
+    display: flex;
+    gap: 16px;
+    padding: 15px 18px;
+}
+
+.selectionBox {
+    flex: 1;
+    color: white;
+    height: 90px;
+    text-align: center;
+    border-radius: 8px;
+    font-family: 'Pretendard', sans-serif;
+    position: relative; 
+}
+
+.selectionBox span {
+    position: absolute;
+    left: 8px;
+    bottom: 10px;
+}
+
+
+.selectionBox:nth-child(1) {
+  background: linear-gradient(to right, #01796F, #A8D5C2);
+  font-size: 14px;
+}
+.selectionBox:nth-child(2) {
+  background: linear-gradient(to right, #00B3B3, #4B9EA9);
+  font-size: 12px;
+}
+.selectionBox:nth-child(3) {
+  background: linear-gradient(to right, #01796F, #4B9EA9);
+  font-size: 14px;
+}
