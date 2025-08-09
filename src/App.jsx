@@ -1,7 +1,8 @@
 import './App.css'
 import logo from './assets/main-icon.png'
-import TodayDate from './todayDate'
-import RestaurantSelection from './restaurant-selection'
+import TodayDate from './TodayDate'
+import RestaurantSelection from './Restaurant-selection'
+import Calendar from './Calendar'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
               제휴 식당 보기</button>
           </div>
           < RestaurantSelection />
+          < Calendar />
         </div>
      </div>
   )
