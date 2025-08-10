@@ -1,8 +1,8 @@
 import './App.css'
 import logo from './assets/main-icon.png'
-import TodayDate from './TodayDate'
-import RestaurantSelection from './Restaurant-selection'
-import Calendar from './Calendar'
+import TodayDate from './Components/TodayDate'
+import RestaurantSelection from './Components/Restaurant-selection'
+import Calendar from './Components/Calendar'
 
 function App() {
   return (

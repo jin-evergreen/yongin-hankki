@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Calendar.module.css';
+import styles from '../css/Calendar.module.css';
 
 function Calendar(){
 

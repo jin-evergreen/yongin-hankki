@@ -1,4 +1,4 @@
-import styles from './TodayDate.module.css'
+import styles from '../css/TodayDate.module.css'
 
 function TodayDate(){
     const today = new Date();

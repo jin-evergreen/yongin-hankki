@@ -6,7 +6,7 @@
 }
 
 .container {
-    background-color: hsl(180, 100%, 25%);
+    background: linear-gradient(to right, #A8D5C2,#008080);
     min-height: 100vh;
     display: flex;
     justify-content: center;
