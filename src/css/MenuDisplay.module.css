@@ -73,12 +73,17 @@
     margin-top: 10px;
 }
 
+.cornerTitle span {
+    color: #555;
+}
+
 .menuList {
     margin-top: 0px;
 }
 
 .menuList li {
-    padding-top: 5px;
+    font-size: 14px;
+    padding-top: 7px;
 }
 
 /* -------------------- 식당 없을 때 ----------------------- */

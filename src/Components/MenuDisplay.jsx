@@ -35,7 +35,7 @@ function MenuDisplay({selectedRestaurant}){
 
                 return (
                     <div key={cornerName} className={styles.cornerBox}>
-                        <h3 className={styles.cornerTitle}>{cornerName} {price !== 0 && ` (${price}₩)`}</h3>
+                        <h3 className={styles.cornerTitle}>{cornerName} <span>{price !== 0 && ` (${price}₩)`}</span></h3>
 
                         {todayMenu.length > 0 ? (
                             <ul className={styles.menuList}>
