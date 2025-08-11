@@ -38,3 +38,8 @@
 .todayLabel {
     color:white;
 }
+
+.underLine {
+  height: 10px;
+  border-bottom: 2px solid #FAF9F9;
+}

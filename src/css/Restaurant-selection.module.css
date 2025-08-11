@@ -41,3 +41,16 @@
   background: linear-gradient(to right, #01796F, #4B9EA9);
   font-size: 14px;
 }
+
+.selected {
+  border: 2px solid #E6FFFA;
+  box-shadow: 0 4px 12px rgba(46, 136, 139, 0.3);
+  background-color: #FFF8F0;
+  transform: scale(1.05);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.selected span {
+  font-weight: 400;
+}

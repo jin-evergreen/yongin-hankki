@@ -1,10 +1,14 @@
 import './App.css'
+import React, {useState} from 'react'
 import logo from './assets/main-icon.png'
 import TodayDate from './Components/TodayDate'
 import RestaurantSelection from './Components/Restaurant-selection'
 import Calendar from './Components/Calendar'
 
 function App() {
+
+  const [selectedRestaurant, setSelectedRestaurant] = useState(null);
+
   return (
      <div className='container'>
         <div className='header'>
@@ -18,7 +22,10 @@ function App() {
             onClick={()=>window.open('https://map.naver.com/p/favorite/myPlace/folder/841c9b6f17c4413eb548bd090aa60fcd/pc?c=14.00,0,0,0,dh','_blank')}>
               제휴 식당 보기</button>
           </div>
-          < RestaurantSelection />
+          < RestaurantSelection 
+            selected = {selectedRestaurant}
+            onSelect={(key)=>setSelectedRestaurant(key)}
+          />
           < Calendar />
         </div>
      </div>
