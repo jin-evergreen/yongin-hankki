@@ -1,0 +1,97 @@
+.container {
+    display: flex;
+    gap : 16px;
+    padding: 16px;
+    align-items: flex-start;
+    font-family: 'Pretendard',sans-serif;
+}
+
+/* -------------- 기타 부분 --------------------- */
+
+.extra {
+    height: 30px;
+}
+
+.extra span {
+   font-size: 14px;
+   font-weight: 500;
+   color:#BCC1CD;
+   display: inline-block;
+   margin-left: 16px;
+   padding-top: 15px;
+}
+
+.operatingHours{
+    font-size: 16px;
+}
+
+.operatingHours p:first-child {
+  margin-top: 2px;
+  margin-bottom: 0px;
+  font-weight: 500;
+}
+
+.operatingHours p:last-child {
+  margin-top: 8px;
+  font-weight: 500;
+  color:#BCC1CD;
+}
+
+.divider {
+    width : 2px;
+    background-color: #FAF9F9;
+    align-self: stretch;
+}
+
+/* ------------------ 코너 박스 부분 ----------------------- */
+
+.cornersContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.cornerBox {
+  width: 100%;
+  min-height: 150px; /* 최소 높이 */
+  padding: 16px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: #FFFDFC;
+  box-shadow: 0 4px 12px rgba(0, 128, 128, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: height 0.3s ease;
+}
+
+.cornerTitle {
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.menuList {
+    margin-top: 0px;
+}
+
+.menuList li {
+    padding-top: 5px;
+}
+
+/* -------------------- 식당 없을 때 ----------------------- */
+.noRestaurant {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 50%;
+}
+
+.noRestaurant p {
+    margin : 6px;
+    color : #555;
+}

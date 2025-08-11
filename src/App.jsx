@@ -4,6 +4,7 @@ import logo from './assets/main-icon.png'
 import TodayDate from './Components/TodayDate'
 import RestaurantSelection from './Components/Restaurant-selection'
 import Calendar from './Components/Calendar'
+import MenuDisplay from './Components/MenuDisplay'
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
             onSelect={(key)=>setSelectedRestaurant(key)}
           />
           < Calendar />
+          < MenuDisplay selectedRestaurant={selectedRestaurant}/>
         </div>
      </div>
   )
