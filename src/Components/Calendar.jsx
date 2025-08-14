@@ -16,7 +16,6 @@ function Calendar(){
         date.setDate(startOfWeek.getDate() + i);
         return date.getDate();
     });
-
     return (
         <div className={styles.calendarWrapper}>
             <div className={styles.calendar}>

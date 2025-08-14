@@ -1,11 +1,9 @@
 .container {
     display: flex;
-    align-items: flex-start;
     padding : 10px 20px;
     background-color: #fff;
     font-family: 'Pretendard';
     border-top-left-radius: 32px;
-    border-top-right-radius: 32px;
 }
 
 .day {

@@ -13,6 +13,7 @@ function MenuDisplay({selectedRestaurant}){
     }
 
     const restaurantData = menuData[selectedRestaurant];
+
     if(!restaurantData){
         return <div>데이터가 없습니다.</div>
     }
@@ -24,8 +25,8 @@ function MenuDisplay({selectedRestaurant}){
         <div className={styles.extra}><span>운영시간</span></div>
         <div className={styles.container}>
             <div className={styles.operatingHours}>
-                <p>09:00</p>
-                <p>18:00</p>
+                <p>08:00</p>
+                <p>12:00</p>
             </div>
             <div className={styles.divider}></div>
             <div className={styles.cornersContainer}>
