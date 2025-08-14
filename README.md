@@ -1,8 +1,5 @@
 <div align="center">
 
-<!-- logo -->
-<img src="/Users/j_seok/project/yongin-hankki/yongin-hankki/src/assets/readme_logo.jpeg" width="400"/>
-
 <br/> 
 
 </div> 
