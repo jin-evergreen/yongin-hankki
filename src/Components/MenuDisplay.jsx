@@ -1,9 +1,9 @@
 import styles from '../css/MenuDisplay.module.css'
 import menuData from '../data/menu'
 
-function MenuDisplay({selectedRestaurant}){
+function MenuDisplay({selectedRestaurant,selectedDate}){
 
-    const today = new Date().toISOString().slice(0,10);
+    const today = selectedDate.toISOString().slice(0,10);
 
     if(!selectedRestaurant) {
         return <div className={styles.noRestaurant}>

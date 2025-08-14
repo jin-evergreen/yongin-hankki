@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from '../css/Calendar.module.css';
 
-function Calendar(){
+function Calendar({selectedDate, setSelectedDate}){
 
     const days = ["S", "M", "T", "W", "T", "F", "S"];
 
@@ -14,20 +14,24 @@ function Calendar(){
     const dates = Array.from({ length: 7 }, (_, i) => {
         const date = new Date(startOfWeek);
         date.setDate(startOfWeek.getDate() + i);
-        return date.getDate();
+        return date;
     });
+
     return (
         <div className={styles.calendarWrapper}>
             <div className={styles.calendar}>
                 {days.map((day, index) => {
-                    const isToday = dates[index] === todayDate;
+                    const dateObj = dates[index]
+                    const isSelected = dateObj.toDateString() === selectedDate.toDateString();
+
                     return (
                         <div
                             key={index}
-                            className={`${styles.calendarCell} ${isToday ? styles.today : ''}`}
+                            onClick={()=>setSelectedDate(dateObj)}
+                            className={`${styles.calendarCell} ${isSelected ? styles.today : ''}`}
                         >
-                            <div className={`${styles.dayLabel} ${isToday ? styles.todayLabel : ''}`}>{day}</div>
-                            <div className={styles.dateNumber}>{dates[index]}</div>
+                            <div className={`${styles.dayLabel} ${isSelected ? styles.todayLabel : ''}`}>{day}</div>
+                            <div className={styles.dateNumber}>{dateObj.getDate()}</div>
                         </div>
                     );
                 })}

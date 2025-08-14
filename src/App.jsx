@@ -9,6 +9,7 @@ import MenuDisplay from './Components/MenuDisplay'
 function App() {
 
   const [selectedRestaurant, setSelectedRestaurant] = useState(null);
+  const [selectedDate, setSelectedDate] = useState(new Date());
 
   return (
      <div className='container'>
@@ -27,8 +28,14 @@ function App() {
             selected = {selectedRestaurant}
             onSelect={(key)=>setSelectedRestaurant(key)}
           />
-          < Calendar />
-          < MenuDisplay selectedRestaurant={selectedRestaurant}/>
+          < Calendar 
+            selectedDate = {selectedDate}
+            setSelectedDate = {setSelectedDate}
+          />
+          < MenuDisplay 
+            selectedRestaurant={selectedRestaurant}
+            selectedDate={selectedDate}
+          />
         </div>
      </div>
   )
