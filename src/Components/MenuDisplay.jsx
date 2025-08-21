@@ -20,13 +20,26 @@ function MenuDisplay({selectedRestaurant,selectedDate}){
 
     const {corners} = restaurantData;
 
+    let [restarant, floor] = ["",""]
+    if(selectedRestaurant == "인성관 식당"){
+        restarant = "인성관";
+        floor = "1층";
+    } else if(selectedRestaurant == "용오름대학 식당"){
+        restarant = "용오름";
+        floor = "B1층"
+    } else {
+        restarant = "기숙사";
+        floor = "1층";
+    }
+
+
     return (
         <>
-        <div className={styles.extra}><span>운영시간</span></div>
+        <div className={styles.extra}><span>식당위치</span></div>
         <div className={styles.container}>
             <div className={styles.operatingHours}>
-                <p>08:00</p>
-                <p>12:00</p>
+                <p>{restarant}</p>
+                <p>{floor}</p>
             </div>
             <div className={styles.divider}></div>
             <div className={styles.cornersContainer}>

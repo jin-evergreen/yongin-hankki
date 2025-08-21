@@ -1,6 +1,5 @@
 .text {
     font-size: 14px;
-    font-family: 'Pretendard';
     color: #BCC1CD;
     margin-left: 5%;
 
@@ -18,14 +17,15 @@
     height: 90px;
     text-align: center;
     border-radius: 8px;
-    font-family: 'Pretendard', sans-serif;
     position: relative; 
+    container-type: inline;
 }
 
 .selectionBox span {
     position: absolute;
     left: 8px;
     bottom: 10px;
+    font-size: clamp(12px, 3cqw, 14px);
 }
 
 
