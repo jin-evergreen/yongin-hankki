@@ -1,6 +1,55 @@
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 100; /* Variable 폰트의 굵기 범위 */
+  font-style: normal;
+  font-display: swap;
+  src: url('font/Pretendard-Thin.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 200; /* Variable 폰트의 굵기 범위 */
+  font-style: normal;
+  font-display: swap;
+  src: url('font/Pretendard-ExtraLight.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 300; /* Variable 폰트의 굵기 범위 */
+  font-style: normal;
+  font-display: swap;
+  src: url('font/Pretendard-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 400; /* Variable 폰트의 굵기 범위 */
+  font-style: normal;
+  font-display: swap;
+  src: url('font/Pretendard-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 500; /* Variable 폰트의 굵기 범위 */
+  font-style: normal;
+  font-display: swap;
+  src: url('font/Pretendard-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 600; /* Variable 폰트의 굵기 범위 */
+  font-style: normal;
+  font-display: swap;
+  src: url('font/Pretendard-Bold.woff') format('woff');
+}
+
 html, body, #root {
     margin : 0;
     padding: 0;
     height: 100%;
-    font-family: "Pretendard Variable"
+    font-family: "Pretendard", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-synthesis: none;
 }
