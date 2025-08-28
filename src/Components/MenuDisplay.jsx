@@ -28,7 +28,7 @@ function MenuDisplay({selectedRestaurant,selectedDate}){
         restarant = "용오름";
         floor = "B1층"
     } else {
-        restarant = "기숙사";
+        restarant = "생활관";
         floor = "1층";
     }
 
