@@ -1,9 +1,12 @@
 import styles from '../css/MenuDisplay.module.css'
+import { useDate } from '../contexts/DateContext';
+import { formatDateToString } from '../utils/dateUtils.js';
 import menuData from '../data/menu'
 
-function MenuDisplay({selectedRestaurant,selectedDate}){
+function MenuDisplay({selectedRestaurant}){
 
-    const today = selectedDate.toISOString().slice(0,10);
+    const {selectedDate} = useDate();
+    const today = formatDateToString(selectedDate);
 
     if(!selectedRestaurant) {
         return <div className={styles.noRestaurant}>

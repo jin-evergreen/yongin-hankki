@@ -5,14 +5,14 @@ import TodayDate from './Components/TodayDate'
 import RestaurantSelection from './Components/Restaurant-selection'
 import Calendar from './Components/Calendar'
 import MenuDisplay from './Components/MenuDisplay'
+import { DateProvider } from './contexts/DateContext';
 
 function App() { 
 
   const [selectedRestaurant, setSelectedRestaurant] = useState(null);
-  const [selectedDate, setSelectedDate] = useState(new Date());
-  
 
   return (
+    <DateProvider>
      <div className='container'>
         <div className='header'>
           <img src={logo} alt="logo" className='icon' />
@@ -29,16 +29,13 @@ function App() {
             selected = {selectedRestaurant}
             onSelect={(key)=>setSelectedRestaurant(key)}
           />
-          < Calendar 
-            selectedDate = {selectedDate}
-            setSelectedDate = {setSelectedDate}
-          />
+          < Calendar />
           < MenuDisplay 
             selectedRestaurant={selectedRestaurant}
-            selectedDate={selectedDate}
           />
         </div>
      </div>
+    </DateProvider>
   )
 }
 

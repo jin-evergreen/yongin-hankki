@@ -1,7 +1,8 @@
 import styles from '../css/TodayDate.module.css'
+import { getTodayKST} from '../utils/dateUtils.js';
 
 function TodayDate(){
-    const today = new Date();
+    const today = getTodayKST();
 
     const day = String(today.getDate()).padStart(2,'0');
 

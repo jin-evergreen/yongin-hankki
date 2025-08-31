@@ -30,13 +30,17 @@
   font-weight: 500;
 }
 
-.today {
+.selected {
   background-color: #FF7648;
   color: white;
 }
 
-.todayLabel {
+.selectedLabel {
     color:white;
+}
+
+.today:not(.selected) {
+  border: 1px solid #DCDCDC;
 }
 
 .underLine {
