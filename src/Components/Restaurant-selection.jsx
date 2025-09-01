@@ -17,7 +17,7 @@ function RestaurantSelection({selected,onSelect}){
                 className={`${styles.selectionBox} ${selected === '용오름대학 식당' ? styles.selected:''}`}
                 onClick={()=>onSelect('용오름대학 식당')}
             >
-                <span>용오름대학 식당</span>
+                <span>용오름 식당</span>
             </div>
             <div 
                 className={`${styles.selectionBox} ${selected === '기숙사 식당' ? styles.selected:''}`}

@@ -21,7 +21,7 @@ function MenuDisplay({selectedRestaurant}){
         return <div>데이터가 없습니다.</div>
     }
 
-    const {corners} = restaurantData;
+    const {corners,dailyKcal} = restaurantData;
 
     let [restarant, floor] = ["",""]
     if(selectedRestaurant == "인성관 식당"){
@@ -46,13 +46,14 @@ function MenuDisplay({selectedRestaurant}){
             </div>
             <div className={styles.divider}></div>
             <div className={styles.cornersContainer}>
-                {Object.entries(corners).map(([cornerName,cornerData])=>{
+                {Object.entries(corners).map(([cornerName,cornerData],index)=>{
                 const todayMenu = cornerData.dailyMenus[today] || [];
                 const price = cornerData.price;
+                const kcal = dailyKcal?.[today]?.[index] || 0;
 
                 return (
                     <div key={cornerName} className={styles.cornerBox}>
-                        <h3 className={styles.cornerTitle}>{cornerName} <span>{price !== 0 && ` (₩${price})`}</span></h3>
+                        <h3 className={styles.cornerTitle}>{cornerName} <span>{price !== 0 && ` (₩${price})`}{kcal !== 0 && ` - ${kcal}kcal`}</span></h3>
 
                         {todayMenu.length > 0 ? (
                             <ul className={styles.menuList}>
