@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from '../css/Restaurant-selection.module.css'
+import styles from '../css/RestaurantSelection.module.css'
 
 function RestaurantSelection({selected,onSelect}){
 

@@ -2,7 +2,7 @@ import './App.css'
 import React, {useState} from 'react'
 import logo from './assets/main-icon.png'
 import TodayDate from './Components/TodayDate'
-import RestaurantSelection from './Components/Restaurant-selection'
+import RestaurantSelection from './Components/RestaurantSelection'
 import Calendar from './Components/Calendar'
 import MenuDisplay from './Components/MenuDisplay'
 import { DateProvider } from './contexts/DateContext';
