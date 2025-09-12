@@ -27,6 +27,13 @@ function App() {
               제휴 식당 보기
             </button>
           </div>
+          <div className="notice-box">
+            <div className="notice">
+              <span className="notice-text">
+                [공지사항] 용오름 식당 식단표 OPEN!
+              </span>
+            </div>
+          </div>
           <RestaurantSelection
             selected={selectedRestaurant}
             onSelect={(key) => setSelectedRestaurant(key)}

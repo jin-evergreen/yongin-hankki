@@ -1,51 +1,49 @@
 .text {
-    font-size: 14px;
-    color: #BCC1CD;
-    margin-left: 4%;
-
+  font-size: 14px;
+  color: #bcc1cd;
+  margin-left: 4%;
 }
 
 .container {
-    display: flex;
-    gap: 16px;
-    padding: 15px 18px;
+  display: flex;
+  gap: 16px;
+  padding: 15px 18px;
 }
 
 .selectionBox {
-    flex: 1;
-    color: white;
-    height: 90px;
-    text-align: center;
-    border-radius: 8px;
-    position: relative; 
-    container-type: inline;
+  flex: 1;
+  color: white;
+  height: 90px;
+  text-align: center;
+  border-radius: 8px;
+  position: relative;
+  container-type: inline;
 }
 
 .selectionBox span {
-    position: absolute;
-    left: 8px;
-    bottom: 10px;
-    font-size: clamp(12px, 3cqw, 14px);
+  position: absolute;
+  left: 8px;
+  bottom: 10px;
+  font-size: clamp(12px, 3cqw, 14px);
 }
 
-
 .selectionBox:nth-child(1) {
-  background: linear-gradient(to right, #01796F, #A8D5C2);
+  background: linear-gradient(to right, #01796f, #a8d5c2);
   font-size: 14px;
 }
 .selectionBox:nth-child(2) {
-  background: linear-gradient(to right, #00B3B3, #4B9EA9);
+  background: linear-gradient(to right, #00b3b3, #4b9ea9);
   font-size: 12px;
 }
 .selectionBox:nth-child(3) {
-  background: linear-gradient(to right, #01796F, #4B9EA9);
+  background: linear-gradient(to right, #01796f, #4b9ea9);
   font-size: 14px;
 }
 
 .selected {
-  border: 2px solid #E6FFFA;
+  border: 2px solid #e6fffa;
   box-shadow: 0 4px 12px rgba(46, 136, 139, 0.3);
-  background-color: #FFF8F0;
+  background-color: #fff8f0;
   transform: scale(1.05);
   border-radius: 12px;
   transition: all 0.3s ease;
