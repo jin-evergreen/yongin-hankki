@@ -1,7 +1,7 @@
-import React from 'react';
-import styles from '../css/Calendar.module.css';
-import { useDate } from '../contexts/DateContext';
-import { getTodayKST, formatDateToString } from '../utils/dateUtils.js';
+import React from "react";
+import styles from "../css/Calendar.module.css";
+import { useDate } from "../contexts/DateContext";
+import { getTodayKST, formatDateToString } from "../utils/dateUtils.js";
 
 function Calendar() {
   const { selectedDate, setSelectedDate } = useDate();
@@ -22,16 +22,26 @@ function Calendar() {
       <div className={styles.calendar}>
         {days.map((day, index) => {
           const dateObj = dates[index];
-          const isSelected = formatDateToString(dateObj) === formatDateToString(selectedDate);
-          const isToday = formatDateToString(dateObj) === formatDateToString(today);
+          const isSelected =
+            formatDateToString(dateObj) === formatDateToString(selectedDate);
+          const isToday =
+            formatDateToString(dateObj) === formatDateToString(today);
 
           return (
             <div
               key={index}
               onClick={() => setSelectedDate(dateObj)}
-              className={`${styles.calendarCell} ${isSelected ? styles.selected : ''} ${isToday ? styles.today : ''}`}
+              className={`${styles.calendarCell} ${
+                isSelected ? styles.selected : ""
+              } ${isToday ? styles.today : ""}`}
             >
-              <div className={`${styles.dayLabel} ${isSelected ? styles.selectedLabel : ''}`}>{day}</div>
+              <div
+                className={`${styles.dayLabel} ${
+                  isSelected ? styles.selectedLabel : ""
+                }`}
+              >
+                {day}
+              </div>
               <div className={styles.dateNumber}>{dateObj.getDate()}</div>
             </div>
           );
