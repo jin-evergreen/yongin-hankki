@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "../css/Calendar.module.css";
-import { useDate } from "../contexts/DateContext";
+import { useSelection } from "../contexts/SelectionContext.jsx";
 import { getTodayKST, formatDateToString } from "../utils/dateUtils.js";
 
 function Calendar() {
-  const { selectedDate, setSelectedDate } = useDate();
+  const { selectedDate, setSelectedDate } = useSelection();
   const days = ["S", "M", "T", "W", "T", "F", "S"];
   const today = getTodayKST();
 

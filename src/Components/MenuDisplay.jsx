@@ -1,10 +1,10 @@
 import styles from "../css/MenuDisplay.module.css";
-import { useDate } from "../contexts/DateContext";
+import { useSelection } from "../contexts/SelectionContext.jsx";
 import { formatDateToString } from "../utils/dateUtils.js";
 import menuData from "../data/menu";
 
-function MenuDisplay({ selectedRestaurant }) {
-  const { selectedDate } = useDate();
+function MenuDisplay() {
+  const { selectedDate, selectedRestaurant } = useSelection();
   const today = formatDateToString(selectedDate);
 
   if (!selectedRestaurant) {
