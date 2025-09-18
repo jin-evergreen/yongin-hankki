@@ -72,6 +72,21 @@ function MenuDisplay() {
                 ) : (
                   <p className={styles.noMenu}>오늘의 메뉴가 없습니다.</p>
                 )}
+                <div>
+                  {selectedRestaurant === "인성관 식당" &&
+                  cornerName != "PLUS 코너" ? (
+                    <div className={styles.menuPhoto}>
+                      <a
+                        href="https://www.instagram.com/yiu_cafeteria/"
+                        target="_blank"
+                      >
+                        <span className={styles.photoLink}>
+                          메뉴 사진 보러가기 &gt;
+                        </span>
+                      </a>
+                    </div>
+                  ) : null}
+                </div>
               </div>
             );
           })}

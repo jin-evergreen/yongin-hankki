@@ -1,28 +1,28 @@
 .container {
-    display: flex;
-    gap : 16px;
-    padding: 16px;
-    align-items: flex-start;
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  align-items: flex-start;
 }
 
 /* -------------- 기타 부분 --------------------- */
 
 .extra {
-    height: 30px;
+  height: 30px;
 }
 
 .extra span {
-   font-size: 14px;
-   font-weight: 500;
-   color:#BCC1CD;
-   display: inline-block;
-   margin-left: 12px;
-   padding-top: 15px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #bcc1cd;
+  display: inline-block;
+  margin-left: 12px;
+  padding-top: 15px;
 }
 
-.operatingHours{
-    font-size: 14px;
-    width: 48px;
+.operatingHours {
+  font-size: 14px;
+  width: 48px;
 }
 
 .operatingHours p:first-child {
@@ -35,13 +35,13 @@
   margin-top: 8px;
   margin-left: 8px;
   font-weight: 500;
-  color:#008080;
+  color: #008080;
 }
 
 .divider {
-    width : 2px;
-    background-color: #FAF9F9;
-    align-self: stretch;
+  width: 2px;
+  background-color: #faf9f9;
+  align-self: stretch;
 }
 
 /* ------------------ 코너 박스 부분 ----------------------- */
@@ -59,7 +59,7 @@
   padding: 16px;
   box-sizing: border-box;
   border-radius: 8px;
-  background-color: #FFFDFC;
+  background-color: #fffdfc;
   box-shadow: 0 4px 12px rgba(0, 128, 128, 0.15);
   display: flex;
   flex-direction: column;
@@ -68,41 +68,58 @@
 }
 
 .cornerTitle {
-    font-size: 16px;
-    font-weight: 500;
-    margin-left: 10px;
-    margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
 .cornerTitle span {
-    color: #555;
+  color: #555;
 }
 
 .menuList {
-    margin-top: 0px;
+  margin-top: 0px;
 }
 
 .menuList li {
-    font-size: 14px;
-    padding-top: 7px;
+  font-size: 14px;
+  padding-top: 7px;
 }
 
 /* -------------------- 식당 없을 때 ----------------------- */
 .noRestaurant {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 50%;
 }
 
 .noRestaurant p {
-    margin : 6px;
-    color : #555;
+  margin: 6px;
+  color: #555;
 }
 
 .noMenu {
-    margin-left: 10px;
-    font-size: 14px;
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+/* -------------- 메뉴 사진 -------------- */
+
+.menuPhoto {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.menuPhoto a {
+  text-decoration: none;
+}
+
+.photoLink {
+  color: #008080;
+  font-size: 12px;
 }

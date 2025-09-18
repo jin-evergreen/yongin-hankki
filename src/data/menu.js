@@ -93,7 +93,7 @@ const menuData = {
   "용오름대학 식당": {
     corners: {
       A코너: {
-        price: 6000,
+        price: 5000,
         dailyMenus: {
           "2025-09-15": [
             "제육김치덮밥",
@@ -158,7 +158,7 @@ const menuData = {
   "기숙사 식당": {
     corners: {
       조식: {
-        price: 0,
+        price: 6000,
         dailyMenus: {
           "2025-09-15": [
             "프렌치토스트",
@@ -203,7 +203,7 @@ const menuData = {
         },
       },
       중식: {
-        price: 0,
+        price: 6000,
         dailyMenus: {
           "2025-09-15": [
             "한그릇갈비탕",
@@ -248,7 +248,7 @@ const menuData = {
         },
       },
       석식: {
-        price: 0,
+        price: 6000,
         dailyMenus: {
           "2025-09-15": [
             "순살등심돈까스",
